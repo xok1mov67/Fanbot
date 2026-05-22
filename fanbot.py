@@ -11,7 +11,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 
-TOKEN = "8976256232:AAHH4ZW3QbFsiPIr7AP5Y4_TxHNjJr7z9nA"
+import os
+TOKEN = os.environ.get("TOKEN")
 NATIJALAR_FAYL = "natijalar.json"
 
 TESTS = [
